@@ -6,6 +6,10 @@ bower install
 npm install
 grunt
 
+The src/audio and build/audio folders should be writable.
+If you're in a linux/unix shell try:
+sudo chmod 777 src/audio build/audio
+
 You can run the project in your brower either from the src dir of the build dir.
 Running it from the src dir is recommended to quickly test things out when developing.
 The build dir is generated when running grunt and its the production version.
