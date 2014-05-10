@@ -1,0 +1,32 @@
+{
+  "name": "sil",
+  "version": "0.0.1",
+  "authors": [
+    "Alberto Miranda <codealchemist@gmail.com>"
+  ],
+  "description": "Ayuda para lectura de oraciones separando palabras en sílabas",
+  "main": "main.js",
+  "keywords": [
+    "lectura",
+    "sílabas"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.11",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "requirejs-plugins": "~1.0.2",
+    "lodash": "~2.4.1",
+    "underscore.string": "~2.3.3",
+    "seiyria-bootstrap-slider": "~3.0.1",
+    "soundmanager": "*"
+  }
+}

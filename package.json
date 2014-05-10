@@ -1,0 +1,23 @@
+{
+  "name": "sil",
+  "version": "0.0.1",
+  "description": "Ayuda para lectura de oraciones separando palabras en sílabas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lectura",
+    "sílabas"
+  ],
+  "author": "Alberto Miranda <b3rt.js@gmail.com>",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-bower-task": "~0.3.4",
+    "grunt-contrib-requirejs": "~0.4.4"
+  }
+}
