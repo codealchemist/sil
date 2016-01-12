@@ -3,7 +3,7 @@ It's mainly aimed to assist kids as soon as they start learning to read.
 It will take a phrase as input and it features full phrase reading, per word reading and per syllables reading.
 It renders the words and syllables with bigs fonts inside a modal box, features audio reading and speed controls.
 
-See the [live demo](http://brainpowered.com.ar/content/sil/).
+See the [live demo](http://sil-fuckyeah.rhcloud.com).
 
 ### Install:
 
