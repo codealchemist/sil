@@ -8,6 +8,7 @@ vendor/requirejs-plugins/text.js
 vendor/requirejs-plugins/json.js
 json!data/dictionary.json
 js/models/reader.model.js
+js/models/lister.model.js
 vendor/soundmanager/script/soundmanager2-nodebug-jsmin.js
 js/app.js
 vendor/bootstrap/bootstrap.js

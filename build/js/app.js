@@ -1,8 +1,9 @@
 define([
 	'jquery',
 	'models/reader.model',
+	'models/lister.model',
 	'soundmanager'
-], function($, Reader, soundManager){
+], function($, Reader, Lister, soundManager){
 	var moduleName = 'APP';
 	function log(message) {
 		console.log(moduleName + ': ' + message);
@@ -13,8 +14,12 @@ define([
 		$readPhraseButton = $('#read-phrase-button'),
 		$readWordsButton = $('#read-words-button'),
 		$readSyllablesButton = $('#read-syllables-button'),
+		$listWordsButton = $('#list-words-button'),
+		$listSyllablesButton = $('#list-syllables-button'),
+		$listBothButton = $('#list-both-button'),
 		$speed = $('#speed'),
-		$voice = $('#voice');
+		$voice = $('#voice'),
+		list = Lister('hey');
 
 	function init(){
 		log('init');
@@ -47,6 +52,11 @@ define([
 
 	function events() {
 		log('events');
+		$text.on('keydown', function() {
+			log('text changed');
+			list.hide();
+		});
+
 		$readPhraseButton.on('click', function(){
 			var text = $text.val();
 			log('read phrase: ' + text);
@@ -75,6 +85,24 @@ define([
 			} else {
 				$readPhraseButton.addClass('hidden');
 			}
+		});
+
+		$listWordsButton.on('click', function() {
+			var text = $text.val();
+			log('list words: ' + text);
+			Lister(text).renderWords();
+		});
+
+		$listSyllablesButton.on('click', function() {
+			var text = $text.val();
+			log('list syllables: ' + text);
+			Lister(text).renderSyllables();
+		});
+
+		$listBothButton.on('click', function() {
+			var text = $text.val();
+			log('list words with syllables: ' + text);
+			Lister(text).renderBoth();			
 		});
 	}
 
