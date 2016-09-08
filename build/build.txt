@@ -1,0 +1,15 @@
+
+js/main.js
+----------------
+vendor/jquery/jquery.js
+vendor/lodash/lodash.compat.js
+vendor/syllables/bundle.js
+vendor/requirejs-plugins/text.js
+vendor/requirejs-plugins/json.js
+json!data/dictionary.json
+js/models/reader.model.js
+vendor/soundmanager/script/soundmanager2-nodebug-jsmin.js
+js/app.js
+vendor/bootstrap/bootstrap.js
+vendor/seiyria-bootstrap-slider/bootstrap-slider.js
+js/main.js

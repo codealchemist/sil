@@ -1,0 +1,15 @@
+{
+	"mamá": ["ma", "má"],
+	"papá": ["pa", "pá"],
+	"son": ["son"],
+	"unos": ["u", "nos"],
+	"genios": ["ge", "ni", "os"],
+	"genio": ["ge", "nio"],
+	"quieren": ["qui", "e", "ren"],
+	"mucho": ["mu", "cho"],
+	"voy": ["vo", "y"],
+	"aprender": ["a", "pren", "der"],
+	"leer": ["le", "er"],
+	"muy": ["mu", "y"],
+	"bien": ["bi", "en"]
+}
