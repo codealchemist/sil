@@ -3,9 +3,9 @@ var http = require('http');
 var gzippo = require('gzippo');
 
 var app = express();
-app.use(gzippo.staticGzip('' + __dirname + '/dist/'));
+app.use(gzippo.staticGzip('' + __dirname + '/build/'));
 app.use('/*', function(req, res){
-  res.sendfile(__dirname + '/build/index.html');
+  res.sendfile(__dirname + '/build/');
 });
 
 var server = http.createServer(app);
