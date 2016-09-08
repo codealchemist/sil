@@ -44,11 +44,10 @@ define([
 			minChars = 3;
 		_.each(words, function(word){
 			wordLength = word.length;
-			// wordSyllables = dictionary[word] || null;
-			wordSyllables = new Syllables(word).get() || null;
+			wordSyllables = new Syllables(word).get();
 
 			//add small words
-			if (wordLength <= minChars && wordSyllables === null) {
+			if (wordLength === 1) {
 				wordSyllables = [word];
 			}
 
