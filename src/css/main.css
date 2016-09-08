@@ -22,3 +22,31 @@ textarea {
 .slider {
 	margin: 0 20px;
 }
+
+/* full width */
+.fw,
+.fw .slider-horizontal {
+	width: 100%;
+}
+
+.row > .controls {
+	margin-right: 20px;
+}
+
+.controls {
+	padding-top: 20px;
+}
+
+.controls-md {
+	width: 260px;
+}
+
+.controls-lg {
+	width: 380px;
+}
+
+#list {
+	display: none;
+	margin-top: 50px;
+	font-size: 22px;
+}
