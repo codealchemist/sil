@@ -10,7 +10,8 @@ require.config({
         json: '../vendor/requirejs-plugins/json',
         templates: '../templates',
         data: '../data',
-        soundmanager: '../vendor/soundmanager/script/soundmanager2-nodebug-jsmin'
+        soundmanager: '../vendor/soundmanager/script/soundmanager2-nodebug-jsmin',
+        syllables: '../vendor/syllables/bundle'
     },
     shim: {
         'handlebars': {
@@ -26,6 +27,9 @@ require.config({
         },
         'soundmanager': {
             exports: 'soundManager'
+        },
+        'syllables': {
+            exports: 'Syllables'
         }
     },
     waitSeconds: 30 //default = 7

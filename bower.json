@@ -27,6 +27,7 @@
     "lodash": "~2.4.1",
     "underscore.string": "~2.3.3",
     "seiyria-bootstrap-slider": "~3.0.1",
-    "soundmanager": "*"
+    "soundmanager": "*",
+    "syllables": "https://github.com/codealchemist/syllables.git"
   }
 }

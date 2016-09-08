@@ -1,7 +1,8 @@
 define([
 	'lodash',
+	'syllables',
 	'json!data/dictionary.json'
-], function(_, dictionary){
+], function(_, Syllables, dictionary){
 	var moduleName = 'READER.MODEL';
 	function log(message) {
 		console.log(moduleName + ': ' + message);
@@ -43,7 +44,8 @@ define([
 			minChars = 3;
 		_.each(words, function(word){
 			wordLength = word.length;
-			wordSyllables = dictionary[word] || null;
+			// wordSyllables = dictionary[word] || null;
+			wordSyllables = new Syllables(word).get() || null;
 
 			//add small words
 			if (wordLength <= minChars && wordSyllables === null) {
